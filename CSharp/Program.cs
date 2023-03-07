@@ -14,6 +14,7 @@
             Console.WriteLine("2    PairNumbers");
             Console.WriteLine("3    NumbersDivisibleBy3");
             Console.WriteLine("4    Arrays");
+            Console.WriteLine("5    CalculateAdditionEvenAndSubtractionOdd");
 
             option = Convert.ToInt16(Console.ReadLine());
 
@@ -34,6 +35,10 @@
                 case 4:
                     Console.WriteLine(line);
                     Arrays.ArrayOfEvenNumbers();
+                    break;
+                case 5:
+                    Console.WriteLine(line);
+                    AdditionEvenSubtractionOdd.CalculateAdditionEvenAndSubtractionOdd();
                     break;
                 default: Console.WriteLine("Select a valid option"); goto Begin;
             }
