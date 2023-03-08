@@ -43,5 +43,42 @@ namespace CSharp
             return number.ToString() + " " + message;
 
         }
+
+        internal static void GetTheDayOfWeek()
+        {
+            short numberOfTheDay = 0;
+
+            Console.WriteLine("Enter a number of a day of the week");
+
+            numberOfTheDay = Convert.ToInt16(Console.ReadLine());
+
+            switch (numberOfTheDay)
+            {
+                case 1:
+                    Console.WriteLine("The day entered is: Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("The day entered is: Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("The day entered is: Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("The day entered is: Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("The day entered is: Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("The day entered is: Satarday");
+                    break;
+                case 7:
+                    Console.WriteLine("The day entered is: Sunday");
+                    break;
+                default:
+                    Console.WriteLine("Invalida number for a day of the week");
+                    break;
+            }
+        }
     }
 }

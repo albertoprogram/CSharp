@@ -23,6 +23,8 @@
                 case 1:
                     Console.WriteLine(line);
                     Console.WriteLine(SwitchCase.Selection());
+                    Console.WriteLine(line);
+                    SwitchCase.GetTheDayOfWeek();
                     break;
                 case 2:
                     Console.WriteLine(line);
