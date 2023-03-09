@@ -15,6 +15,7 @@
             Console.WriteLine("3    NumbersDivisibleBy3");
             Console.WriteLine("4    Arrays");
             Console.WriteLine("5    CalculateAdditionEvenAndSubtractionOdd");
+            Console.WriteLine("6    ExecuteSumAndAverage");
 
             option = Convert.ToInt16(Console.ReadLine());
 
@@ -41,6 +42,10 @@
                 case 5:
                     Console.WriteLine(line);
                     AdditionEvenSubtractionOdd.CalculateAdditionEvenAndSubtractionOdd();
+                    break;
+                case 6:
+                    Console.WriteLine(line);
+                    SumAndAverage.ExecuteSumAndAverage();
                     break;
                 default: Console.WriteLine("Select a valid option"); goto Begin;
             }
