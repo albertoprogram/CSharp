@@ -20,6 +20,7 @@
                 Console.WriteLine("5    CalculateAdditionEvenAndSubtractionOdd");
                 Console.WriteLine("6    ExecuteSumAndAverage");
                 Console.WriteLine("7    PrimeNumber");
+                Console.WriteLine("8    NumberOfDigits");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -55,6 +56,10 @@
                     case 7:
                         Console.WriteLine(line);
                         PrimeNumber.CheckIfNumberIsPrime();
+                        break;
+                    case 8:
+                        Console.WriteLine(line);
+                        NumberOfDigits.GetNumberOfDigits();
                         break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
