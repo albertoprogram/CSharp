@@ -21,6 +21,7 @@
                 Console.WriteLine("6    ExecuteSumAndAverage");
                 Console.WriteLine("7    PrimeNumber");
                 Console.WriteLine("8    NumberOfDigits");
+                Console.WriteLine("9    StackQueue");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -60,6 +61,10 @@
                     case 8:
                         Console.WriteLine(line);
                         NumberOfDigits.GetNumberOfDigits();
+                        break;
+                    case 9:
+                        Console.WriteLine(line);
+                        Stack_Queue.StackQueue();
                         break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
