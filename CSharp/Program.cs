@@ -22,6 +22,7 @@
                 Console.WriteLine("7    PrimeNumber");
                 Console.WriteLine("8    NumberOfDigits");
                 Console.WriteLine("9    StackQueue");
+                Console.WriteLine("10   ReturnMultipleValuesByReference");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -65,6 +66,12 @@
                     case 9:
                         Console.WriteLine(line);
                         Stack_Queue.StackQueue();
+                        break;
+                    case 10:
+                        Console.WriteLine(line);
+                        int number1 = 1, number2 = 3; string firstName = "John";
+                        ReturnMultipleValuesByReference.MultipleValuesByReference(ref number1, ref number2, ref firstName);
+                        Console.WriteLine($"The values are: '{number1}', '{number2}', '{firstName}'");
                         break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
