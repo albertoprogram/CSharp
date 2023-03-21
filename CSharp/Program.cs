@@ -23,6 +23,7 @@
                 Console.WriteLine("8    NumberOfDigits");
                 Console.WriteLine("9    StackQueue");
                 Console.WriteLine("10   ReturnMultipleValuesByReference");
+                Console.WriteLine("11   ReverseTwoDigitNumber");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -72,6 +73,11 @@
                         int number1 = 1, number2 = 3; string firstName = "John";
                         ReturnMultipleValuesByReference.MultipleValuesByReference(ref number1, ref number2, ref firstName);
                         Console.WriteLine($"The values are: '{number1}', '{number2}', '{firstName}'");
+                        break;
+                    case 11:
+                        Console.WriteLine(line);
+                        ReverseTwoDigitNumber.ExecReverseTwoDigitNumber();
+                        ReverseTwoDigitNumber.ExecReverseTwoDigitNumber_v2();
                         break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
