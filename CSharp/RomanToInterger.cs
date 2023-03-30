@@ -28,7 +28,22 @@ namespace CSharp
             */
 
             if (s.Contains("IM") ||
-                s.Contains("VX")) return 0;
+                s.Contains("ID") ||
+                s.Contains("IC") ||
+                s.Contains("IL") ||
+                s.Contains("VM") ||
+                s.Contains("VD") ||
+                s.Contains("VC") ||
+                s.Contains("VL") ||
+                s.Contains("VX") ||
+                s.Contains("XM") ||
+                s.Contains("XD") ||
+                s.Contains("LM") ||
+                s.Contains("LD") ||
+                s.Contains("LC") ||
+                s.Contains("DM") ||
+                s is null ||
+                s.Length == 0) return 0; // Invalid
 
             int _IV, _IX, _XL, _XC, _CD, _CM;
 
