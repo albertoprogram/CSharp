@@ -19,12 +19,6 @@ namespace CSharp
               XC=90
               CD=400
               CM=900
-
-            Example for addition:
-            https://www.rapidtables.org/convert/number/roman-numerals-converter.html?x1=MMMCMXCIX&x2=
-
-            leetcode:
-            https://leetcode.com/problems/roman-to-integer/
             */
 
             if (s.Contains("IM") ||
