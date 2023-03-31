@@ -81,12 +81,13 @@
                         ReverseTwoDigitNumber.ExecReverseTwoDigitNumber_v2();
                         break;
                     case 12:
+                        BeginRomanToInteger:
                         Console.WriteLine(line);
                         Console.WriteLine("Enter a Roman Number");
                         string? romanNumber = Console.ReadLine();
                         int number = RomanToInterger.RomanToInt(romanNumber);
                         Console.WriteLine($"The Roman Number {romanNumber} is the integer {number}");
-                        break;
+                        goto BeginRomanToInteger;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
