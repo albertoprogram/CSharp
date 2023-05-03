@@ -25,6 +25,7 @@
                 Console.WriteLine("10   ReturnMultipleValuesByReference");
                 Console.WriteLine("11   ReverseTwoDigitNumber");
                 Console.WriteLine("12   RomanToInterger");
+                Console.WriteLine("13   CurrencyConverter");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -81,13 +82,16 @@
                         ReverseTwoDigitNumber.ExecReverseTwoDigitNumber_v2();
                         break;
                     case 12:
-                        BeginRomanToInteger:
+                    BeginRomanToInteger:
                         Console.WriteLine(line);
                         Console.WriteLine("Enter a Roman Number");
                         string? romanNumber = Console.ReadLine();
                         int number = RomanToInterger.RomanToInt(romanNumber);
                         Console.WriteLine($"The Roman Number {romanNumber} is the integer {number}");
                         goto BeginRomanToInteger;
+                    case 13:
+                        CurrencyConverter.Converter();
+                        break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
