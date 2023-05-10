@@ -14,7 +14,7 @@ namespace CSharp
             decimal amount = 0.00M, progress = 0.00M;
             int quantityOfBillsOf20 = 0, quantityOfBillsOf10 = 0;
 
-            Console.WriteLine("Enter the amount");
+            Console.WriteLine("Please, enter the amount");
 
             amount = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
