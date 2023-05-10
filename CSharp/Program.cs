@@ -26,6 +26,7 @@
                 Console.WriteLine("11   ReverseTwoDigitNumber");
                 Console.WriteLine("12   RomanToInterger");
                 Console.WriteLine("13   CurrencyConverter");
+                Console.WriteLine("14   ATM");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -92,6 +93,8 @@
                     case 13:
                         CurrencyConverter.Converter();
                         break;
+                    case 14:
+                        ATM.CashDispensing(); break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
