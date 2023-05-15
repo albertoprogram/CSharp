@@ -27,6 +27,8 @@
                 Console.WriteLine("12   RomanToInterger");
                 Console.WriteLine("13   CurrencyConverter");
                 Console.WriteLine("14   ATM");
+                Console.WriteLine("15   NullInStrings");
+                Console.WriteLine("16   ReverseAString");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -95,6 +97,11 @@
                         break;
                     case 14:
                         ATM.CashDispensing(); break;
+                    case 15:
+                        UsingNull_InStrings.NullInStrings();
+                        break;
+                    case 16:
+                        ReverseAString.ReverseString(); break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
