@@ -29,6 +29,7 @@
                 Console.WriteLine("14   ATM");
                 Console.WriteLine("15   NullInStrings");
                 Console.WriteLine("16   ReverseAString");
+                Console.WriteLine("17   StringOperations");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -102,6 +103,9 @@
                         break;
                     case 16:
                         ReverseAString.ReverseString(); break;
+                    case 17:
+                        StringOperations.String_Operations();
+                        break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
