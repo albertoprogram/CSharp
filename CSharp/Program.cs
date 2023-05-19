@@ -30,6 +30,7 @@
                 Console.WriteLine("15   NullInStrings");
                 Console.WriteLine("16   ReverseAString");
                 Console.WriteLine("17   StringOperations");
+                Console.WriteLine("18   NumbersInAString");
                 Console.WriteLine(line);
 
                 option = Convert.ToInt16(Console.ReadLine());
@@ -106,6 +107,8 @@
                     case 17:
                         StringOperations.String_Operations();
                         break;
+                    case 18:
+                        NumbersInAString.DetectNumbersInAString(); break;
                     default: Console.WriteLine("Select a valid option"); goto Begin;
                 }
 
